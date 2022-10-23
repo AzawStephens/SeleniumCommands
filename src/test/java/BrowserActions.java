@@ -17,9 +17,9 @@ public class BrowserActions {
         theDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         theDriver.manage().timeouts().scriptTimeout(Duration.ofMinutes(2));
         theDriver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
-        theDriver.get("https://www.renaissance.com/?utm_source=sigstr&utm_medium=email&utm_content=rli_logo&utm_campaign=general");
+        theDriver.get("https://www.yahoo.com/");
         String originalWindow = theDriver.getWindowHandle();
-        theDriver.navigate().to("https://www.renaissance.com/about-us/");
+        theDriver.navigate().to("https://news.yahoo.com/");
         System.out.println(theDriver.getCurrentUrl());//Print out the url to the console
         System.out.println(theDriver.getTitle()); //Print out the title to the console
         theDriver.navigate().back();//Navigate back
